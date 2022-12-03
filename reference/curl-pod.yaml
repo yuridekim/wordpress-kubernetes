@@ -1,0 +1,11 @@
+# curl-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: curl-pod
+  namespace: lab06
+spec:
+  containers:
+  - name: curl
+    image: curlimages/curl
+    command: ['sh', '-c', 'echo hello, world! && sleep 3600']
